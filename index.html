@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/boilerplate.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header>
+           <h1>MotoDynasty Profile Form</h1> 
+        </header>
+        <div class="content">
+            <form id="ProfileInfo" action="#" method="post">
+                <div class="personal">
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John" aria-required="true">
+                    </div>
+                    <div>
+                       <label for="lastName">Last Name:</label>
+                       <input type="text" name="lastName" id="lastName" placeholder="Doe" aria-required="true">
+                    </div>
+                    <div>
+                        <label for="radio-male">Male</label>
+                        <input type="radio" name="sex" id="radio-male"  value="male">
+                        <label for="radio-female">Female</label>
+                        <input type="radio" name="sex" id="radio-female" value="female">
+                    </div>
+                    <div>
+                       <label for="bday">Birthday:</label>
+                       <input type="date" name="bday" id="bday" aria-required="true">
+                    </div>
+                    <div>
+                       <label for="email">Email:</label>
+                       <input type="email" name="email" id="email" placeholder="Doe@gmail.com" aria-required="true">
+                    </div>
+                    <div>
+                       <label for="phone">Phone Number:</label>
+                       <input type="tel" name="phone" id="phone" placeholder="208-899-1023" aria-required="false">
+                    </div>
+                    <div>
+                        <label for="select-choice">Motocross Experience:</label>
+                        <select name="select-choice" id="select-choice">
+                          <option value="never">never</option>
+                          <option value="moderate">moderate</option>
+                          <option value="expert">expert</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="textarea">Montra:</label>
+                        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                    </div>
+                    <div>
+                        <label for="share">Share Profile Publicly:</label>
+                        <input type="checkbox" name="share">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Update">
+                </div>
+            </form>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
